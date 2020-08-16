@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+data:
+  AWS_BUCKET: udagramcloud
+  AWS_PROFILE: DEPLOYED
+  AWS_REGION: ap-south-1
+  JWT_SECRET: HelloWorld
+  POSTGRES_DB: udagramudacity
+  POSTGRES_HOST: udagramudacity.cm1neiyzyh1f.ap-south-1.rds.amazonaws.com
+  DIALECT: postgres
+  URL: http://localhost:8100  
+metadata:
+  name: env-config
