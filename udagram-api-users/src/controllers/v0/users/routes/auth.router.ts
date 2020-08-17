@@ -90,6 +90,7 @@ router.post("/login", async (req: Request, res: Response) => {
   }
 
   const jwt = generateJWT(user);
+  console.log(`${email} user has logged in at: `, new Date().toLocaleString());
   res.status(200).send({ auth: true, token: jwt, user: user.short() });
 });
 
